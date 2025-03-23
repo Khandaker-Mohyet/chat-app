@@ -10,7 +10,6 @@ const userSchema = new mongoose.Schema(
     fullName: {
       type: String,
       require: true,
-      
     },
     password: {
       type: String,
@@ -19,7 +18,7 @@ const userSchema = new mongoose.Schema(
     },
     profilePic: {
       type: String,
-      default: ","
+      default: "",
     }
   },
   {
@@ -27,6 +26,6 @@ const userSchema = new mongoose.Schema(
   }
 )
 
-const User = mongoose.model("User");
+const User = mongoose.model("User", userSchema);
 
 export default User;
