@@ -1,9 +1,13 @@
 import React from 'react';
+import ChatHeader from './ChatHeader';
+import MessageInput from './MessageInput';
 
 const ChatContainer = () => {
   return (
     <div>
-      This is chat container
+      <ChatHeader></ChatHeader>
+      massages
+      <MessageInput></MessageInput>
     </div>
   );
 };
